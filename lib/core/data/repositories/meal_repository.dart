@@ -16,6 +16,7 @@ class MealRepository {
       ).then((response) {
         CommonResponse<List<dynamic>> commonResponse =
             CommonResponse.fromJson(response);
+        //function
 
         if (commonResponse.getStatus) {
           List<MealModel> result = [];
